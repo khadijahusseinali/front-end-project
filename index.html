@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        @media screen and (max-width:816px) {
+            .flex-item1 {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+                background-color: brown;
+            }
+            .nav{
+                background-color: blue;
+            }
+        }
+
+
+        * {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        /* nav starts here */
+        .nav {
+            display: flex;
+            justify-content: space-around;
+            background-color: black;
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            right: 0px;
+            height: 60px;
+            z-index: 1;
+        }
+
+        .safari {
+            color: orange;
+            margin-top: 17px;
+        }
+
+        .left {
+            color: white;
+            font-weight: bold;
+            font-size: 20px;
+
+        }
+
+        .center {
+            margin-top: 18px;
+            font-size: 15px;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+            padding: 12px;
+        }
+
+        .Home {
+            border-radius: 45%;
+            background-color: orange;
+            width: 50px;
+            height: 50px;
+
+
+        }
+
+        .icons {
+            background-color: white;
+
+            border-radius: 50%;
+            font-size: 18px;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 3px;
+        }
+
+        .icons:hover {
+            color: white;
+            background-color: orange;
+            cursor: pointer;
+        }
+
+        .right {
+            display: flex;
+            flex-direction: row;
+            margin-top: 3px;
+        }
+
+        /* nav ends here */
+
+
+        /* header starts here */
+        .header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin: 20px;
+            margin-top: 90px;
+        }
+
+        .menu {
+            color: orange;
+
+        }
+
+        .food {
+            font-size: 20px;
+        }
+
+        /* header ends here */
+
+
+        /* container starts here */
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+            /* display: flex;
+            justify-content: center; */
+        }
+
+        .flex-items {
+            border: 1px solid rgb(146, 142, 142);
+            margin: 8px;
+            padding: 10px;
+            border-radius: 5px; 
+        }
+
+        img {
+            /* height: 200px; */
+            /* width: 240px; */
+
+            /* width: 100%;
+            border-radius: 5px; */
+           width: 100%;
+            border-radius: 5px;
+
+
+
+        }
+
+        input {
+            color: white;
+            background-color: black;
+            padding: 8px;
+            width: 145px;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        input:hover {
+            background-color: orange;
+            cursor: pointer;
+            border: none;
+            width: 150px;
+
+        }
+
+        .money {
+            font-size: 23px;
+            margin-left: 5px;
+            color: orange;
+        }
+
+        .favorite {
+            background-color: white;
+
+            border-radius: 50%;
+            font-size: 18px;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            right: 7px;
+            top: 5px;
+
+        }
+
+        .favorite:hover {
+            color: white;
+            background-color: orange;
+            cursor: pointer;
+        }
+
+        .images {
+            position: relative;
+            /* position: fixed; */
+            /* width: 100%;
+            border-radius: 5px; */
+        }
+
+        .star {
+            color: orange;
+
+
+        }
+
+        /* container ends here */
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <div class="left"><span class="material-icons safari">
+                restaurant
+            </span> <small>Safari Restaurent</small></div>
+        <div class="center">
+            <a href="#" class="Home">Home</a>
+            <a href="#">About</a>
+            <a href="#">Menu</a>
+            <a href="#">Review</a>
+            <a href="#">Order</a>
+        </div>
+        <div class="right">
+            <span class="material-icons icons">
+                search
+            </span>
+            <span class="material-icons icons">
+                shopping_cart
+            </span>
+            <span class="material-icons icons">
+                favorite
+            </span>
+        </div>
+    </div>
+    <!-- nav ends here -->
+    <div class="box">
+        <div class="header">
+            <span class="menu">menu</span>
+            <span class="food">SPECIALITY FOOD AND JUICE</span>
+        </div>
+
+
+
+        <div class="container">
+            <div class="flex-items item1">
+
+
+                <div class="images">
+                    <span class="material-icons favorite">
+                        favorite
+                    </span>
+                    <img src="menu9.jpg" alt="">
+
+
+                </div>
+                <div>
+                    <span class="material-icons star">
+                        star
+                    </span>
+                    <span class="material-icons star">
+                        star
+                    </span>
+                    <span class="material-icons star">
+                        star
+                    </span>
+                    <span class="material-icons star">
+                        star
+                    </span>
+                    <span class="material-icons star">
+                        star_half
+                    </span>
+
+                </div>
+                <div>
+                    <h3>CHICKEN AND CHIPS</h3>
+                    <small>Macaamiil Waxaanu Idin Heynaa <br />Cunooyin Aad Ku Raaxesataan,
+                        <br />Fastfood, Chicken And Chips,<br />
+                        Noloshu Waxay Rabtaa Iney,<br />
+                        Raaxesato Ee U Raaxeey.</small>
+                </div>
+                <div>
+                    <input type="submit" value="Order Now">
+                    <small class="money">$20.00</small>
+                </div>
+
+
+            </div>
+            <div class="flex-items item1">
+
+
+                <div class="images">
+                    <span class="material-icons favorite">
+                        favorite
+                    </span>
+                    <img src="menu1.jpg" alt="">
+
+
+                </div>
+                <div>
+                    <span class="material-icons star">
+                        star
+                    </span>
+                    <span class="material-icons star">
+                        star
+                    </span>
+                    <span class="material-icons star">
+                        star
+                    </span>
+                    <span class="material-icons star">
+                        star
+                    </span>
+                    <span class="material-icons star">
+                        star_half
+                    </span>
+
+                </div>
+                <div>
+                    <h3>CHICKEN AND CHIPS</h3>
+                    <small>Macaamiil Waxaanu Idin Heynaa <br />Cunooyin Aad Ku Raaxesataan,
+                        <br />Fastfood, Chicken And Chips,<br />
+                        Noloshu Waxay Rabtaa Iney,<br />
+                        Raaxesato Ee U Raaxeey.</small>
+                </div>
+                <div>
+                    <input type="submit" value="Order Now">
+                    <small class="money">$20.00</small>
+                </div>
+
+            </div>
+            <div class="flex-items item1">
+
+                <div class="images">
+                    <span class="material-icons favorite">
+                        favorite
+                    </span>
+                    <img src="menu2.jpg" alt="">
+
+
+                </div>
+                <div>
+                    <span class="material-icons star">
+                        star
+                    </span>
+                    <span class="material-icons star">
+                        star
+                    </span>
+                    <span class="material-icons star">
+                        star
+                    </span>
+                    <span class="material-icons star">
+                        star
+                    </span>
+                    <span class="material-icons star">
+                        star_half
+                    </span>
+
+                </div>
+                <div>
+                    <h3>CHICKEN AND CHIPS</h3>
+                    <small>Macaamiil Waxaanu Idin Heynaa <br />Cunooyin Aad Ku Raaxesataan,
+                        <br />Fastfood, Chicken And Chips,<br />
+                        Noloshu Waxay Rabtaa Iney,<br />
+                        Raaxesato Ee U Raaxeey.</small>
+                </div>
+                <div>
+                    <input type="submit" value="Order Now">
+                    <small class="money">$20.00</small>
+                </div>
+
+            </div>
+            <div class="flex-items item1">
+
+
+                <div class="images">
+                    <span class="material-icons favorite">
+                        favorite
+                    </span>
+                    <img src="menu3.jpg" alt="">
+
+
+                </div>
+                <div>
+                    <span class="material-icons star">
+                        star
+                    </span>
+                    <span class="material-icons star">
+                        star
+                    </span>
+                    <span class="material-icons star">
+                        star
+                    </span>
+                    <span class="material-icons star">
+                        star
+                    </span>
+                    <span class="material-icons star">
+                        star_half
+                    </span>
+
+                </div>
+                <div>
+                    <h3>CHICKEN AND CHIPS</h3>
+                    <small>Macaamiil Waxaanu Idin Heynaa <br />Cunooyin Aad Ku Raaxesataan,
+                        <br />Fastfood, Chicken And Chips,<br />
+                        Noloshu Waxay Rabtaa Iney,<br />
+                        Raaxesato Ee U Raaxeey.</small>
+                </div>
+                <div>
+                    <input type="submit" value="Order Now">
+                    <small class="money">$20.00</small>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
