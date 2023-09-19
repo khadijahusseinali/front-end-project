@@ -11,20 +11,20 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-      
+
 
 
     <!-- Include jQuery -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-  <!-- Include Owl Carousel CSS and JS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- Include Owl Carousel CSS and JS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <style>
-  section {
-            padding: 60px 0;
-        }
-
+      section{
+        padding-top: 60px;
+      }
         button .navbar-toggler-icon {
             color: #5c1d1d;
             font-size: 25px;
@@ -57,16 +57,16 @@
             color: white;
             border-radius: 100px;
             border: 1px;
-            width: 60px;
-            padding: 80px;
+            margin-top: 3px;
         }
+
         .navhov {
             color: white;
             border-radius: 100px;
             border: 1px;
-            width: 60px;
-            padding: 80px;
+            padding-top: 200px;
         }
+
         .icons {
             background-color: white;
         }
@@ -97,7 +97,6 @@
             color: white;
             opacity: 0.6;
             font-size: 20px;
-
         }
 
         .footer ul li {
@@ -118,7 +117,60 @@
             background-color: rgb(225, 103, 9);
             box-shadow: 0px 0px 8px rgb(210, 209, 209);
             border: 0;
-
+        }
+        .bbutton button{
+            background-color: black;
+        }
+        textarea {
+            resize: none;
+        }
+        html{
+            overflow-x: hidden;
+        }
+        .one{
+            animation-delay: 1s;
+        }
+        .two{
+            animation-delay: 1.7s;
+        }
+        .three{
+            animation-delay: 2.4s;
+        }
+        .four{
+            animation-delay: 3.1s;
+        }.five{
+            animation-delay: 3.8s;
+        }.six{
+            animation-delay: 4.5s;
+        }.seven{
+            animation-delay: 5.2s;
+        }.eight{
+            animation-delay: 5.9s;
+        }.nine{
+            animation-delay: 6.6s;
+        }.ten{
+            animation-delay: 7.3s;
+        }.eleven{
+            animation-delay: 8s;
+        }.twelve{
+            animation-delay: 8.7s;
+        }
+        .animate{
+            animation-duration: 1s;
+            animation-fill-mode: both;
+        }
+        @keyframes fadeUp{
+            from{
+                opacity: 0;
+                transform: translate3d(0, 100%, 0);
+            }
+            to{
+                opacity: 1;
+                transform: none;
+            }
+        }
+        .fadeUp{
+            animation-name: fadeUp;
         }
     </style>
 </head>
@@ -134,24 +186,12 @@
                 <i class="fa-solid fa-bars" style="color: white;"></i>
             </button>
             <div class="collapse navbar-collapse  justify-content-center text-start d-md-start" id="navbarNav">
-                <ul class="navbar-nav  align-items-center ">
-                    <li class="nav-item">
-                        <a class="nav-link rounded-pill p-2 py-2 px-3" id="txtwhite"
-                            style="background-color:rgb(225, 103, 9) ;" href="#home">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link navhov p-2 py-1 px-2" id="txtwhite" href="#about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link navhov p-2 py-1 px-2" id="txtwhite" href="#menu">Menu</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link navhov p-2 py-1 px-2" id="txtwhite" href="#Review">Review</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link navhov p-2 py-1 px-2" id="txtwhite" href="#Order">Order</a>
-                    </li>
-                </ul>
+                <a class="nav-link rounded-pill p-2 py-3 px-4" id="txtwhite" style="background-color:rgb(225, 103, 9) ;"
+                    href="#home">Home</a>
+                <a class="nav-link navhov p-2 py-1 px-2" id="txtwhite" href="#about">About</a>
+                <a class="nav-link navhov p-2 py-1 px-2" id="txtwhite" href="#menu">Menu</a>
+                <a class="nav-link navhov p-2 py-1 px-2" id="txtwhite" href="#review">review</a>
+                <a class="nav-link navhov p-2 py-1 px-2" id="txtwhite" href="#Order">Order</a>
             </div>
             <div class="d-none d-md-block " id="navbarNav ">
                 <ul class="navbar-nav text-center align-items-center justify-content-center ">
@@ -164,13 +204,11 @@
                     <li class="nav-item ms-2">
                         <i class=" icons fa-solid fa-heart  rounded-circle  px-3 py-3"></i>
                     </li>
-
                 </ul>
             </div>
         </div>
     </nav>
     <!-- navbar end-->
-
     <!-- section 1 -->
     <section class="home" id="home" style="padding-top: 5rem;">
         <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
@@ -245,13 +283,11 @@
         </div>
     </section>
     <!-- sectin 1 end -->
-
-
     <!-- section2 -->
     <section class="about" id="about">
-        <div class="text-center py-3 ">
-            <h4 class="sub-heading fw-bold" id="color-orange">About Us</h4>
-            <h3 class="heading fw-bold">WHY CHOOSE US</h3>
+        <div class="text-center">
+            <h4 class="sub-heading " id="color-orange">About Us</h4>
+            <h3 class="heading ">WHY CHOOSE US</h3>
         </div>
         <div class="container">
             <div class="row ">
@@ -268,20 +304,16 @@
                         And
                         Chips, Nolosha
                         Waxay Rabtaa Iney Raxeesato Ee Uraaxeeya.</p>
-                      
-
                     <div class="text-center ">
                         <div class="row gy-2 gx-5 ms-1">
-                            <div class=" col-lg-6 col-md-4 col-sm-6 border bg-light py-2"><i
+                            <div class=" col-lg-6 col-md-4 col-sm-6 border bg-light py-3 rounded"><i
                                     class="fs-4 fa-solid  fa-truck-fast me-2" id="color-orange"></i>Free Delivery</div>
-                            <div class=" col-lg-6 col-md-4 col-sm-6 border bg-light py-2"><i
+                            <div class=" col-lg-6 col-md-4 col-sm-6 border bg-light py-3 rounded"><i
                                     class="fs-4 fa-solid fa-dollar-sign me-2" id="color-orange"></i>Easy Payments</div>
-                            <div class=" col-lg-12  col-md-4 col-sm-12 border  bg-light py-2"><i
+                            <div class=" col-lg-12  col-md-4 col-sm-12 border  bg-light py-3 rounded"><i
                                     class="fs-4 fa-solid fa-headset me-2" id="color-orange"></i>
                                 24/7 Service</div>
                         </div>
-
-
                     </div>
                     <div class="home">
                         <button type="button" id="txtwhite" class="btn px-4 mt-3 btn-primary">
@@ -292,25 +324,21 @@
         </div>
     </section>
     <!-- section 2 end -->
-
-
     <!-- section menu -->
-    <section class="menu pt-5" id="menu">
+    <section class="menu" id="menu">
         <div class="container">
             <div class="text-center ">
                 <h5 id="color-orange">Menu</h5>
                 <h2>SPECIALITY FOOD AND JUICE</h2>
             </div>
-
             <div class="row justify-content-center align-items-center pt-2">
                 <!-- item1 -->
-                <div class="col-xl-4 col-xxl-3 col-md-5 col-sm-12 px-2 mb-3">
+                <div class="col-xl-4 col-xxl-3 col-md-5 col-sm-12 px-2 mb-3 one animate fadeUp">
                     <div class="menu card p-4">
                         <div>
                             <i class=" icons fa-solid fa-heart  rounded-circle  px-3 py-3"></i>
 
                             <img src="./IMG/Assignment_Pictures/menu9.jpg" class="card-img-top rounded" alt="...">
-
                         </div>
                         <di=v class="card-body ">
                             <div class="" id="color-orange">
@@ -329,13 +357,11 @@
                     </div>
                 </div>
                 <!-- item2 -->
-                <div class="col-xl-4 col-md-5 col-xxl-3  col-sm-12 px-2 mb-3">
+                <div class="col-xl-4 col-md-5 col-xxl-3  col-sm-12 px-2 mb-3 two animate fadeUp">
                     <div class="menu card p-4">
                         <div>
                             <i class=" icons fa-solid fa-heart  rounded-circle  px-3 py-3"></i>
-
                             <img src="./IMG/Assignment_Pictures/menu1.jpg" class="card-img-top rounded" alt="...">
-
                         </div>
                         <di=v class="card-body ">
                             <div class="" id="color-orange">
@@ -354,13 +380,11 @@
                     </div>
                 </div>
                 <!-- item 3 -->
-                <div class="col-xl-4 col-md-5  col-xxl-3 col-sm-12 px-2 mb-3">
+                <div class="col-xl-4 col-md-5  col-xxl-3 col-sm-12 px-2 mb-3 three animate fadeUp">
                     <div class="menu card p-4">
                         <div>
                             <i class=" icons fa-solid fa-heart  rounded-circle  px-3 py-3"></i>
-
                             <img src="./IMG/Assignment_Pictures/menu2.jpg" class="card-img-top rounded" alt="...">
-
                         </div>
                         <di=v class="card-body ">
                             <div class="" id="color-orange">
@@ -373,19 +397,17 @@
                             <h5 class="card-title fw-bold">Chicken And Chips</h5>
                             <p class="card-text lead fs-6">Macaamiil Waxaanu Idin Haynaa Cunooyiin Aad Ku Raaxeesataan,
                                 Fastfood, Chicken And Chips, Nolosha Waxay Rabtaa Iney Raxeesato Ee Uraaxeeya.</p>
-                                <div class="home"> <button type="button" id="txtwhite" class="btn px-4">Order
+                            <div class="home"> <button type="button" id="txtwhite" class="btn px-4">Order
                                     Now</button>&nbsp;&nbsp;<span class="fs-3 lead " id="color-orange">$20.00</span>
                             </div>
                     </div>
                 </div>
                 <!-- item 4 -->
-                <div class="col-xl-4 col-md-5  col-xxl-3 col-sm-12 px-2 mb-3">
+                <div class="col-xl-4 col-md-5  col-xxl-3 col-sm-12 px-2 mb-3 four animate fadeUp">
                     <div class="menu card p-4">
                         <div>
                             <i class=" icons fa-solid fa-heart  rounded-circle  px-3 py-3"></i>
-
                             <img src="./IMG/Assignment_Pictures/menu3.jpg" class="card-img-top rounded" alt="...">
-
                         </div>
                         <di=v class="card-body ">
                             <div class="" id="color-orange">
@@ -404,13 +426,11 @@
                     </div>
                 </div>
                 <!-- item 5 -->
-                <div class="col-xl-4 col-md-5  col-xxl-3 col-sm-12 px-2 mb-3">
+                <div class="col-xl-4 col-md-5  col-xxl-3 col-sm-12 px-2 mb-3 five animate fadeUp">
                     <div class="menu card p-4">
                         <div>
                             <i class=" icons fa-solid fa-heart  rounded-circle  px-3 py-3"></i>
-
                             <img src="./IMG/Assignment_Pictures/menu4.jpg" class="card-img-top rounded" alt="...">
-
                         </div>
                         <di=v class="card-body ">
                             <div class="" id="color-orange">
@@ -429,13 +449,11 @@
                     </div>
                 </div>
                 <!-- item 6 -->
-                <div class="col-xl-4 col-md-5  col-xxl-3 col-sm-12 px-2 mb-3">
+                <div class="col-xl-4 col-md-5  col-xxl-3 col-sm-12 px-2 mb-3 six animate fadeUp">
                     <div class="menu card p-4">
                         <div>
                             <i class=" icons fa-solid fa-heart  rounded-circle  px-3 py-3"></i>
-
                             <img src="./IMG/Assignment_Pictures/menu5.jpg" class="card-img-top rounded" alt="...">
-
                         </div>
                         <di=v class="card-body ">
                             <div class="" id="color-orange">
@@ -454,13 +472,11 @@
                     </div>
                 </div>
                 <!-- item 7 -->
-                <div class="col-xl-4 col-md-5  col-xxl-3 col-sm-12 px-2 mb-3">
+                <div class="col-xl-4 col-md-5  col-xxl-3 col-sm-12 px-2 mb-3 seven animate fadeUp">
                     <div class="menu card p-4">
                         <div>
                             <i class=" icons fa-solid fa-heart  rounded-circle  px-3 py-3"></i>
-
                             <img src="./IMG/Assignment_Pictures/menu6.jpg" class="card-img-top rounded" alt="...">
-
                         </div>
                         <di=v class="card-body ">
                             <div class="" id="color-orange">
@@ -479,13 +495,11 @@
                     </div>
                 </div>
                 <!-- item 8 -->
-                <div class="col-xl-4 col-md-5  col-xxl-3 col-sm-12 px-2 mb-3">
+                <div class="col-xl-4 col-md-5  col-xxl-3 col-sm-12 px-2 mb-3 eight animate fadeUp">
                     <div class="menu card p-4">
                         <div>
                             <i class=" icons fa-solid fa-heart  rounded-circle  px-3 py-3"></i>
-
                             <img src="./IMG/Assignment_Pictures/menu7.jpg" class="card-img-top rounded" alt="...">
-
                         </div>
                         <di=v class="card-body ">
                             <div class="" id="color-orange">
@@ -504,13 +518,11 @@
                     </div>
                 </div>
                 <!-- item 9 -->
-                <div class="col-xl-4 col-md-5  col-xxl-3 col-sm-12 px-2 mb-3">
+                <div class="col-xl-4 col-md-5  col-xxl-3 col-sm-12 px-2 mb-3 nine animate fadeUp">
                     <div class="menu card p-4">
                         <div>
                             <i class=" icons fa-solid fa-heart  rounded-circle  px-3 py-3"></i>
-
                             <img src="./IMG/Assignment_Pictures/menu8.jpg" class="card-img-top rounded" alt="...">
-
                         </div>
                         <di=v class="card-body ">
                             <div class="" id="color-orange">
@@ -529,13 +541,11 @@
                     </div>
                 </div>
                 <!-- item 10 -->
-                <div class="col-xl-4 col-md-5  col-xxl-3 col-sm-12 px-2 mb-3">
+                <div class="col-xl-4 col-md-5  col-xxl-3 col-sm-12 px-2 mb-3 ten animate fadeUp">
                     <div class="menu card p-4">
                         <div>
                             <i class=" icons fa-solid fa-heart  rounded-circle  px-3 py-3"></i>
-
                             <img src="./IMG/Assignment_Pictures/mangoJuice.jpg" class="card-img-top rounded" alt="...">
-
                         </div>
                         <di=v class="card-body ">
                             <div class="" id="color-orange">
@@ -554,13 +564,11 @@
                     </div>
                 </div>
                 <!-- item 11 -->
-                <div class="col-xl-4 col-md-5  col-xxl-3 col-sm-12 px-2 mb-3">
+                <div class="col-xl-4 col-md-5  col-xxl-3 col-sm-12 px-2 mb-3 eleven animate fadeUp">
                     <div class="menu card p-4">
                         <div>
                             <i class=" icons fa-solid fa-heart  rounded-circle  px-3 py-3"></i>
-
                             <img src="./IMG/Assignment_Pictures/lemonJuice.jpg" class="card-img-top rounded" alt="...">
-
                         </div>
                         <di=v class="card-body ">
                             <div class="" id="color-orange">
@@ -579,14 +587,12 @@
                     </div>
                 </div>
                 <!-- item 12 -->
-                <div class="col-xl-4 col-md-5  col-xxl-3 col-sm-12 px-2 mb-3">
+                <div class="col-xl-4 col-md-5  col-xxl-3 col-sm-12 px-2 mb-3 twelve animate fadeUp">
                     <div class="menu card p-4">
                         <div>
                             <i class=" icons fa-solid fa-heart  rounded-circle  px-3 py-3"></i>
-
                             <img src="./IMG/Assignment_Pictures/recipe-red-drink.jpg" class="card-img-top rounded"
                                 alt="...">
-
                         </div>
                         <di=v class="card-body ">
                             <div class="" id="color-orange">
@@ -611,12 +617,10 @@
 
     </section>
     <!-- section menu end -->
-
-
     <!-- section review -->
-    <section id="review">
+    <section class="review" id="review">
         <div class="container-lg">
-            <div class="text-center mb-4">
+            <div class="text-center ">
                 <h5 id="color-orange">Customer's Review</h5>
                 <h2>WHAT THEY SAY</h2>
             </div>
@@ -625,9 +629,10 @@
                     <div class="item">
                         <div class="card" style="min-width: 18rem;">
                             <div class="card-body">
-                             <div class="d-flex justify-content-between align-items-center">
+                                <div class="d-flex justify-content-between align-items-center">
                                     <div>
-                                        <img src="./IMG/Assignment_Pictures/yahyeIcon.png" class="img rounded-circle" alt="">
+                                        <img src="./IMG/Assignment_Pictures/yahyeIcon.png" class="img rounded-circle"
+                                            alt="">
                                     </div>
                                     <div class="text">
                                         <h3 style="color: #000; font-size: 1.2rem; font-weight: bold;">riduu</h3>
@@ -643,7 +648,7 @@
                                         <i class="fa-solid fa-quote-right"></i>
                                     </div>
                                 </div>
-        
+
                                 <p>Macaamiil Waxaanu Idin Haynaa Cunooyiin Aad Ku Raaxeesataan, Fastfood,
                                     Chicken And Chips, Nolosha Waxay Rabtaa Iney Raxeesato Ee Uraaxeeya.</p>
                             </div>
@@ -652,9 +657,10 @@
                     <div class="item">
                         <div class="card" style="min-width: 18rem;">
                             <div class="card-body">
-                             <div class="d-flex justify-content-between align-items-center">
+                                <div class="d-flex justify-content-between align-items-center">
                                     <div>
-                                        <img src="./IMG/Assignment_Pictures/sabarinIcon.jpg" class="img rounded-circle" alt="">
+                                        <img src="./IMG/Assignment_Pictures/sabarinIcon.jpg" class="img rounded-circle"
+                                            alt="">
                                     </div>
                                     <div class="text">
                                         <h3 style="color: #000; font-size: 1.2rem; font-weight: bold;">bishara</h3>
@@ -670,17 +676,18 @@
                                         <i class="fa-solid fa-quote-right"></i>
                                     </div>
                                 </div>
-        
                                 <p>Macaamiil Waxaanu Idin Haynaa Cunooyiin Aad Ku Raaxeesataan, Fastfood,
                                     Chicken And Chips, Nolosha Waxay Rabtaa Iney Raxeesato Ee Uraaxeeya.</p>
                             </div>
                         </div>
-                    </div><div class="item">
+                    </div>
+                    <div class="item">
                         <div class="card" style="min-width: 18rem;">
                             <div class="card-body">
-                             <div class="d-flex justify-content-between align-items-center">
+                                <div class="d-flex justify-content-between align-items-center">
                                     <div>
-                                        <img src="./IMG/Assignment_Pictures/yahyeIcon.png" class="img rounded-circle" alt="">
+                                        <img src="./IMG/Assignment_Pictures/yahyeIcon.png" class="img rounded-circle"
+                                            alt="">
                                     </div>
                                     <div class="text">
                                         <h3 style="color: #000; font-size: 1.2rem; font-weight: bold;">khadija</h3>
@@ -696,7 +703,7 @@
                                         <i class="fa-solid fa-quote-right"></i>
                                     </div>
                                 </div>
-        
+
                                 <p>Macaamiil Waxaanu Idin Haynaa Cunooyiin Aad Ku Raaxeesataan, Fastfood,
                                     Chicken And Chips, Nolosha Waxay Rabtaa Iney Raxeesato Ee Uraaxeeya.</p>
                             </div>
@@ -705,9 +712,10 @@
                     <div class="item">
                         <div class="card" style="min-width: 18rem;">
                             <div class="card-body">
-                             <div class="d-flex justify-content-between align-items-center">
+                                <div class="d-flex justify-content-between align-items-center">
                                     <div>
-                                        <img src="./IMG/Assignment_Pictures/sabarinIcon.jpg" class="img rounded-circle" alt="">
+                                        <img src="./IMG/Assignment_Pictures/sabarinIcon.jpg" class="img rounded-circle"
+                                            alt="">
                                     </div>
                                     <div class="text">
                                         <h3 style="color: #000; font-size: 1.2rem; font-weight: bold;">salma</h3>
@@ -723,17 +731,18 @@
                                         <i class="fa-solid fa-quote-right"></i>
                                     </div>
                                 </div>
-        
                                 <p>Macaamiil Waxaanu Idin Haynaa Cunooyiin Aad Ku Raaxeesataan, Fastfood,
                                     Chicken And Chips, Nolosha Waxay Rabtaa Iney Raxeesato Ee Uraaxeeya.</p>
                             </div>
                         </div>
-                    </div><div class="item">
+                    </div>
+                    <div class="item">
                         <div class="card" style="min-width: 18rem;">
                             <div class="card-body">
-                             <div class="d-flex justify-content-between align-items-center">
+                                <div class="d-flex justify-content-between align-items-center">
                                     <div>
-                                        <img src="./IMG/Assignment_Pictures/person1.png" class="img rounded-circle" alt="">
+                                        <img src="./IMG/Assignment_Pictures/person1.png" class="img rounded-circle"
+                                            alt="">
                                     </div>
                                     <div class="text">
                                         <h3 style="color: #000; font-size: 1.2rem; font-weight: bold;">khadija</h3>
@@ -749,7 +758,6 @@
                                         <i class="fa-solid fa-quote-right"></i>
                                     </div>
                                 </div>
-        
                                 <p>Macaamiil Waxaanu Idin Haynaa Cunooyiin Aad Ku Raaxeesataan, Fastfood,
                                     Chicken And Chips, Nolosha Waxay Rabtaa Iney Raxeesato Ee Uraaxeeya.</p>
                             </div>
@@ -761,9 +769,6 @@
 
     </section>
     <!-- section review end -->
-
-    
-
     <!-- section Order -->
     <section class="Order p-4  " id="Order">
         <div class="container-lg">
@@ -771,21 +776,18 @@
                 <h5 id="color-orange">Order Now</h5>
                 <h2>DELIVERY AND FAST</h2>
             </div>
-            <div class="border border-2 p-4">
-
-                <div class="row justify-content-center align-items-center d-py-5 d-sm-p-3">
-
-                    <div class="col-sm-5">
-                        <form>
+            <div class="border p-4">
+                <form>
+                    <div class="row justify-content-center  d-py-5 d-sm-p-3">
+                        <div class="col-sm-5">
                             <div class="mb-3">
                                 <label for="exampleInputEmail1" class="form-label ">Full Name</label>
                                 <input type="email" class="form-control rounded-pill p-3" id="exampleInputEmail1"
                                     placeholder="Enter your name" aria-describedby="emailHelp">
                             </div>
                             <div class="input-group mb-3 mt-5">
-
                                 <select class="form-select rounded-pil p-3"
-                                    style="        box-shadow: 0px 0px 8px rgb(210, 209, 209); border-radius: 100px;"
+                                    style="box-shadow: 0px 0px 8px rgb(210, 209, 209); border-radius: 100px;"
                                     aria-label="Default select example">
                                     <option selected>Choose your order
                                     </option>
@@ -804,18 +806,13 @@
                                 <input type="password" class="form-control rounded-pill p-3" id="exampleInputPassword1"
                                     placeholder="How many orders">
                             </div>
-                            <div class="mb-3 text-start">
-                                <label for="exampleInputPassword1" class="form-label">Your Address</label>
-                                <input type="password" class="form-control " style="height: 300px; border-radius: 15%;"
-                                    id="exampleInputPassword1">
-
+                            <div class="mb-3">
+                                <label for="exampleFormControlTextarea1" class="form-label">address</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="10" 
+                                placeholder="enter your address" style="border-radius: 30px; box-shadow: 0px 0px 8px rgb(219, 217, 217);"></textarea>
                             </div>
-
-
-                        </form>
-                    </div>
-                    <div class="col-sm-5">
-                        <form>
+                        </div>
+                        <div class="col-sm-5">
                             <div class="mb-3">
                                 <label for="exampleInputEmail1" class="form-label">Your Number</label>
                                 <input type="email" class="form-control rounded-pill p-3" id="exampleInputEmail1"
@@ -836,17 +833,15 @@
                                 <input type="password" class="form-control rounded-pill p-3" id="exampleInputPassword1"
                                     placeholder="Enter Money">
                             </div>
-                            <form>
-
-                            </form>
-                            <div class="text-center bbutton">
-                                <button type="submit" class="btn btn-primary btn-lg rounded-pill px-4 "
-                                    style="margin-top: 150px;">Order Now</button>
-                            </div>
-                        </form>
+                        </div>
+                        <div class="text-center bbutton " style="margin-left: 200px;">
+                            <button type="submit" class="btn btn-primary btn-lg rounded-pill px-4 ">Order Now</button>
+                        </div>
                     </div>
-                </div>
+                </form>
             </div>
+        </div>
+        </div>
         </div>
         </div>
     </section>
@@ -854,49 +849,44 @@
     <!-- section footer -->
     <section class="footer py-5" style="background-color: black;">
         <div class="container-lg">
-            <div class="row justify-content-center align-items-center g-5 ">
+            <div class="row justify-content-center  g-5 ">
                 <div class="col-md-3 ">
-                   
                     <ul>
                         <h3 id="txtwhite">Location</h3>
-                        <li><a href="">Banadir</a></li>
-                        <li><a href="">Hirshabelle</a></li>
-                        <li><a href="">Jubbaland</a></li>
-                        <li><a href="">Puntland</a></li>
-                        <li><a href="">Galmudug</a></li>
+                        <li class="lead mb-3"><a href="">Banadir</a></li>
+                        <li class="lead mb-3"><a href="">Hirshabelle</a></li>
+                        <li class="lead mb-3"><a href="">Jubbaland</a></li>
+                        <li class="lead mb-3"><a href="">Puntland</a></li>
+                        <li class="lead mb-3"><a href="">Galmudug</a></li>
                     </ul>
                 </div>
                 <div class="col-md-3 ">
                     <ul>
                         <h3 id="txtwhite">Quick Links</h3>
-
-                        <li><a href="">Home</a></li>
-                        <li><a href="">About</a></li>
-                        <li><a href="">Menu</a></li>
-                        <li><a href="">Review</a></li>
-                        <li><a href="">Order</a></li>
+                        <li class="lead mb-3"><a href="">Home</a></li>
+                        <li class="lead mb-3"><a href="">About</a></li>
+                        <li class="lead mb-3"><a href="">Menu</a></li>
+                        <li class="lead mb-3"><a href="">Review</a></li>
+                        <li class="lead mb-3"><a href="">Order</a></li>
                     </ul>
                 </div>
                 <div class="col-md-3">
                     <ul>
                         <h3 id="txtwhite">Contact Us</h3>
-
-                        <li><a href="">+25262384637267</a></li>
-                        <li><a href="">+252623811111</a></li>
-                        <li><a href="">khadija@gmail.com</a></li>
-                        <li><a href="">groupWork@gmail.com</a></li>
+                        <li class="lead mb-3"><a href="">+25262384637267</a></li>
+                        <li class="lead mb-3"><a href="">+252623811111</a></li>
+                        <li class="lead mb-3"><a href="">khadija@gmail.com</a></li>
+                        <li class="lead mb-3"><a href="">groupWork@gmail.com</a></li>
                     </ul>
                 </div>
                 <div class="col-md-3  ">
                     <ul>
                         <h3 id="txtwhite">Follow Us</h3>
-
-                        
-                            <li><a href="">Facebook</a></li>
-                            <li><a href="">Twitter</a></li>
-                            <li><a href="">TikTok</a></li>
-                            <li><a href="">instagram</a></li>
-                        </ul>
+                        <li class="lead mb-3"><a href="">Facebook</a></li>
+                        <li class="lead mb-3"><a href="">Twitter</a></li>
+                        <li class="lead mb-3"><a href="">TikTok</a></li>
+                        <li class="lead mb-3"><a href="">instagram</a></li>
+                    </ul>
                 </div>
             </div>
             <div class=" mt-5  text-center">
@@ -904,18 +894,8 @@
             </div>
         </div>
     </section>
-   
-   
-   
-   
-   
-   
-   
-    
     <!-- section footer end -->
-
-
-<script src="./js/app.js"></script>
+    <script src="./js/app.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
